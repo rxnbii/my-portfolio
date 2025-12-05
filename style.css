@@ -225,3 +225,16 @@ a:hover{
     text-indent: 4px;
     justify-content: center;
 }
+
+#projHeader{
+    background-image: url(images/projects_header.png);
+    height: 175px;
+    width: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+
+/*alternating project photos here
