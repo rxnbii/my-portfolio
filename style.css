@@ -1,0 +1,17 @@
+body{
+    font-family: 'Darumadrop One';
+    background-color: #171717;
+}
+
+hr{
+    height: 5px;
+    background-color: #e4e2dd;
+    border-radius: 10px;
+    width: 1300px
+}
+
+h1{
+    color: #e4e2dd;
+    font-weight: 800;
+    font-size: 96px;
+}
