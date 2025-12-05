@@ -15,3 +15,24 @@ h1{
     font-weight: 800;
     font-size: 96px;
 }
+
+h2{
+    color: #e4e2dd;
+    font-weight: 800;
+    font-size: 96px;
+}
+
+h3{
+    font-size: 62px;
+    color: #e4e2dd;
+}
+
+p{
+    font-family: 'Darumadrop One';
+    color: #e4e2dd;
+    font-size: 32px;
+}
+
+ul{
+    font-size: 32px;
+}
