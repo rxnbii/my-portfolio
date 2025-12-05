@@ -140,6 +140,7 @@ a:hover{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin: 50px 50px;
 }
 
 .box6{
@@ -147,10 +148,11 @@ a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 50px 50px;
 }
 
 .box7{
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 0px 100px;
     flex-direction: row;
     display: flex;
@@ -161,7 +163,7 @@ a:hover{
 }
 
 .box8{
-    padding: 0px 100px;
+    padding-right: 150px;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +172,7 @@ a:hover{
 }
 
 .box9{
-    margin-bottom: 170px;
+    margin-bottom: 100px;
     padding: 0px 100px;
     flex-direction: row;
     display: flex;
@@ -238,9 +240,7 @@ a:hover{
 }
 
 #proj1{
-    width: 100%;
     max-width: 400px;
-    object-fit: cover;
 }
 
 #proj1txt{
@@ -249,23 +249,20 @@ a:hover{
     white-space: normal;
     text-align: right;
     max-width: 1000px;
-    padding: 5px 8px;
     margin: 10px 60px;
 }
 
 #proj2{
-    width: 100%;
     max-width: 400px;
-    object-fit: cover;
 }
 
 #proj2txt{
     flex: 1;
     flex-wrap: wrap;
     white-space: normal;
-    max-width: 1000px;
     text-align: left;
-    margin: 10px 60px;
+    max-width: 1000px;
+    margin-left: 150px;
 }
 
 #proj3txt{
@@ -274,13 +271,12 @@ a:hover{
     white-space: normal;
     text-align: right;
     max-width: 1000px;
-    margin: 10px 60px;
+    margin-right: 60px;
+    margin-left: 150px;
 }
 
 #proj3{
-    width: 100%;
     max-width: 400px;
-    object-fit: cover;
 }
 
 #contact{
