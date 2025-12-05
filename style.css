@@ -208,3 +208,20 @@ a:hover{
     max-width: 400px;
     object-fit: cover;
 }
+
+#intro{
+    flex: 1;
+    flex-wrap: wrap;
+    white-space: normal;
+    text-align: right;
+    max-width: 1000px;
+}
+
+#skillSet{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    text-indent: 4px;
+    justify-content: center;
+}
