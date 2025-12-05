@@ -237,4 +237,54 @@ a:hover{
     margin-bottom: 20px;
 }
 
-/*alternating project photos here
+#proj1{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+#proj1txt{
+    flex: 1;
+    flex-wrap: wrap;
+    white-space: normal;
+    text-align: right;
+    max-width: 1000px;
+    padding: 5px 8px;
+    margin: 10px 60px;
+}
+
+#proj2{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+#proj2txt{
+    flex: 1;
+    flex-wrap: wrap;
+    white-space: normal;
+    max-width: 1000px;
+    text-align: left;
+    margin: 10px 60px;
+}
+
+#proj3txt{
+    flex: 1;
+    flex-wrap: wrap;
+    white-space: normal;
+    text-align: right;
+    max-width: 1000px;
+    margin: 10px 60px;
+}
+
+#proj3{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+#contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
