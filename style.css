@@ -36,3 +36,175 @@ p{
 ul{
     font-size: 32px;
 }
+
+
+ul#navBar{ 
+    color: #171717;
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-indent: 20px;
+}
+
+ul#educ{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    text-indent: 4px;
+    justify-content: center;
+}
+
+ul#socmed{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    text-indent: 4px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #b0b0b2;
+}
+
+a:hover{
+    color: #e4e2dd;
+}
+
+#topBar{
+    border: solid #e4e2dd; 
+    background-color: #e4e2dd; 
+    border-width: 2px; 
+    border-radius: 100px; 
+    padding: 2px 2px; 
+    text-align: center; 
+    justify-content: center; 
+    height: 70px;
+    align-items: center;
+}
+
+#profilePic{
+    height: 360px;
+    width: 360px;
+    border-radius: 180px;
+}
+
+#header{
+    font-weight: 1000;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.box3{
+    margin-bottom: 170px;
+    padding: 0px 100px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.box5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box7{
+    margin-top: 50px;
+    padding: 0px 100px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-around;
+    
+}
+
+.box8{
+    padding: 0px 100px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.box9{
+    margin-bottom: 170px;
+    padding: 0px 100px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+#divider{
+    background-image: url(images/ripped_paper_hr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: auto;
+    margin: 80px 0px;
+    object-fit: cover;
+}
+
+.boxbg1{
+    background-image: url(images/about_bg.png);
+    min-height: 800px;
+    width: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
