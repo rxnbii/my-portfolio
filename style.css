@@ -1,286 +1,328 @@
-body{
-    font-family: 'Darumadrop One';
-    background-color: #171717;
+body {
+  font-family: "Darumadrop One";
+  background-color: #171717;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-hr{
-    height: 5px;
-    background-color: #e4e2dd;
-    border-radius: 10px;
-    width: 1300px
+hr {
+  height: 5px;
+  background-color: #e4e2dd;
+  border-radius: 10px;
+  max-width: 1300px;
+  width: 90%;
+  margin: 20px auto;
+  border: none;
 }
 
-h1{
-    color: #e4e2dd;
-    font-weight: 800;
-    font-size: 96px;
+h1 {
+  color: #e4e2dd;
+  font-weight: 800;
+  font-size: clamp(48px, 8vw, 96px);
 }
 
-h2{
-    color: #e4e2dd;
-    font-weight: 800;
-    font-size: 96px;
+h2 {
+  color: #e4e2dd;
+  font-weight: 800;
+  font-size: clamp(48px, 8vw, 96px);
 }
 
-h3{
-    font-size: 62px;
-    color: #e4e2dd;
+h3 {
+  font-size: clamp(36px, 6vw, 62px);
+  color: #e4e2dd;
 }
 
-p{
-    font-family: 'Darumadrop One';
-    color: #e4e2dd;
-    font-size: 32px;
+p {
+  font-family: "Darumadrop One";
+  color: #e4e2dd;
+  font-size: clamp(18px, 3vw, 32px);
 }
 
-ul{
-    font-size: 32px;
+ul {
+  font-size: clamp(18px, 3vw, 32px);
 }
 
+ul#navBar {
+  color: #171717;
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
 
-ul#navBar{ 
-    color: #171717;
-    list-style: none;
-    flex-direction: row;
-    display: flex;
+ul#educ {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  gap: 16px;
+}
+
+ul#socmed {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #b0b0b2;
+}
+
+a:hover {
+  color: #e4e2dd;
+}
+
+#topBar {
+  border: solid #e4e2dd;
+  background-color: #e4e2dd;
+  border-width: 2px;
+  border-radius: 100px;
+  padding: 2px 2px;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  min-height: 70px;
+  align-items: center;
+}
+
+#profilePic {
+  max-width: 100%;
+  height: auto;
+  width: 360px;
+  border-radius: 50%;
+}
+
+#header {
+  font-weight: 1000;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.box3 {
+  margin-bottom: 100px;
+  padding: 20px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.box5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.box6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 460px);
+  justify-content: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 980px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #e4e2dd;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.project-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #e4e2dd;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 24px;
+}
+
+.project-info h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+.project-info p {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.4;
+}
+
+#divider {
+  background-image: url(images/ripped_paper_hr.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  margin: 50px 0px;
+  background-size: contain;
+}
+
+.boxbg1 {
+  background-image: url(images/about_bg.png);
+  min-height: 800px;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pic {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  flex: 1;
+  min-width: 280px;
+  text-align: right;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  #intro {
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    text-indent: 20px;
+  }
 }
 
-ul#educ{
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    text-align: center;
-    text-indent: 4px;
-    justify-content: center;
+#skillSet {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
 }
 
-ul#socmed{
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    text-align: center;
-    text-indent: 4px;
-    justify-content: center;
+#skillSet img {
+  max-width: 100%;
+  height: auto;
 }
 
-a{
-    text-decoration: none;
-    color: #b0b0b2;
+#projHeader {
+  background-image: url(images/projects_header.png);
+  height: 175px;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 20px;
 }
 
-a:hover{
-    color: #e4e2dd;
+#contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
-#topBar{
-    border: solid #e4e2dd; 
-    background-color: #e4e2dd; 
-    border-width: 2px; 
-    border-radius: 100px; 
-    padding: 2px 2px; 
-    text-align: center; 
-    justify-content: center; 
-    height: 70px;
-    align-items: center;
+.box10 {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-#profilePic{
-    height: 360px;
-    width: 360px;
-    border-radius: 180px;
+iframe {
+  max-width: 100%;
+  width: 600px;
+  height: 80vh;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 
-#header{
-    font-weight: 1000;
-}
-
-.box1{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.box2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-
-.box3{
-    margin-bottom: 170px;
-    padding: 0px 100px;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;    
-    justify-content: space-around;
-}
-
-.box4{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-}
-
-.box5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px 50px;
-}
-
-.box6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px 50px;
-}
-
-.box7{
-    margin-top: 80px;
-    padding: 0px 100px;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;    
-    justify-content: space-around;
-    
-}
-
-.box8{
-    padding-right: 150px;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;    
-    justify-content: space-around;
-}
-
-.box9{
-    margin-bottom: 100px;
-    padding: 0px 100px;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;    
-    justify-content: space-around;
-}
-
-#divider{
-    background-image: url(images/ripped_paper_hr.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    width: auto;
-    margin: 80px 0px;
-    object-fit: cover;
-}
-
-.boxbg1{
-    background-image: url(images/about_bg.png);
-    min-height: 800px;
-    width: auto;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: #171717;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#pic{
-    width: 100%;
-    max-width: 400px;
-    object-fit: cover;
-}
-
-#intro{
-    flex: 1;
-    flex-wrap: wrap;
-    white-space: normal;
-    text-align: right;
-    max-width: 1000px;
-}
-
-#skillSet{
-    list-style: none;
-    flex-direction: row;
-    display: flex;
-    text-align: center;
-    text-indent: 4px;
-    justify-content: center;
-}
-
-#projHeader{
-    background-image: url(images/projects_header.png);
-    height: 175px;
-    width: auto;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin-bottom: 20px;
-}
-
-#proj1{
-    max-width: 400px;
-}
-
-#proj1txt{
-    flex: 1;
-    flex-wrap: wrap;
-    white-space: normal;
-    text-align: right;
-    max-width: 1000px;
-    margin: 10px 60px;
-}
-
-#proj2{
-    max-width: 400px;
-}
-
-#proj2txt{
-    flex: 1;
-    flex-wrap: wrap;
-    white-space: normal;
-    text-align: left;
-    max-width: 1000px;
-    margin-left: 150px;
-}
-
-#proj3txt{
-    flex: 1;
-    flex-wrap: wrap;
-    white-space: normal;
-    text-align: right;
-    max-width: 1000px;
-    margin-right: 60px;
-    margin-left: 150px;
-}
-
-#proj3{
-    max-width: 400px;
-}
-
-#contact{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+#about,
+#projects,
+#contact {
+  scroll-margin-top: 40px;
 }
