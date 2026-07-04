@@ -67,6 +67,10 @@ ul#educ {
   gap: 16px;
 }
 
+ul#educ p {
+  margin: 6px 0;
+}
+
 ul#socmed {
   list-style: none;
   flex-direction: row;
